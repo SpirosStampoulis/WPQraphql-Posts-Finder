@@ -12,7 +12,6 @@ body {
 
 *, *:before, *:after {
     box-sizing: inherit;
-    margin: 0;
 }
 
 .app {
@@ -31,8 +30,50 @@ body {
 
 .search-form input {
     width: 100%;
+    max-width: 760px;
     padding: 20px;
     font-size: 25px;
     border: none;
     border-radius: 5px;
+}
+
+.posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post-card {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.post-card a {
+    text-decoration: none;
+    color: inherit;
+}
+.post-card h3 {
+    margin: 0 0 40px;
+    word-wrap: break-word;
+}
+.post-card p {
+    display: block;
+}
+.post-card img {
+    height: auto;
+    max-height: 300px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 500px){
+    .post-card {
+        width: 48%;
+    }
+}
+@media screen and (min-width: 800px){
+    .post-card {
+        width: 28%;
+    }
 }
