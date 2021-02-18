@@ -30,4 +30,3 @@ function PostsFinder() {
 }
 
 export default PostsFinder;
-
